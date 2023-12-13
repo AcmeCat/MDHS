@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.FXMLAdminController">
+    <stylesheets>
+        <URL value="@mdhs.css" />
+    </stylesheets>
+   <children>
+      <HBox prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <VBox alignment="CENTER" prefHeight="400.0" prefWidth="301.0">
+               <children>
+                  <Label text="Product">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="20.0" prefWidth="80.0" text="Name" />
+                  <TextField fx:id="txtName" maxHeight="20.0" maxWidth="150.0" prefHeight="20.0" prefWidth="150.0" />
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="20.0" prefWidth="80.0" text="Quantity" />
+                  <TextField fx:id="txtQuantity" maxHeight="20.0" maxWidth="150.0" prefHeight="20.0" prefWidth="150.0" />
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="20.0" prefWidth="80.0" text="Unit" />
+                  <TextField fx:id="txtUnit" maxHeight="20.0" maxWidth="150.0" prefHeight="20.0" prefWidth="150.0" />
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="20.0" prefWidth="80.0" text="Unit Price" />
+                  <TextField fx:id="txtPrice" maxHeight="20.0" maxWidth="150.0" prefHeight="20.0" prefWidth="150.0" />
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="20.0" prefWidth="80.0" text="Ingredients" />
+                  <TextField fx:id="txtIngredients" maxHeight="20.0" maxWidth="150.0" prefHeight="20.0" prefWidth="150.0" />
+                  <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#addProduct" prefHeight="20.0" prefWidth="80.0" text="Add">
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#submitProducts" prefHeight="20.0" prefWidth="80.0" text="Submit">
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="400.0" prefWidth="291.0" style="-fx-background-color: #e8e8e8;">
+               <children>
+                  <Label text="Delivery Schedule">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label text="PostCode" />
+                  <TextField fx:id="txtPostCode" maxHeight="20.0" maxWidth="150.0" prefHeight="20.0" prefWidth="150.0" />
+                  <Label text="Day" />
+                  <TextField fx:id="txtDay" maxHeight="20.0" maxWidth="150.0" prefHeight="20.0" prefWidth="150.0" />
+                  <Label text="Cost" />
+                  <TextField fx:id="txtCost" maxHeight="20.0" maxWidth="150.0" prefHeight="20.0" prefWidth="150.0" />
+                  <Button mnemonicParsing="false" onAction="#addSchedule" prefHeight="20.0" prefWidth="80.0" text="Add">
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#submitSchedules" prefHeight="20.0" prefWidth="80.0" text="Submit">
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="400.0" prefWidth="274.0" style="-fx-background-color: #ddd;">
+               <children>
+                  <TextArea fx:id="tarAdminDisplay" prefHeight="400.0" prefWidth="400.0" style="-fx-background-color: #DDD;">
+                     <padding>
+                        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                     </padding>
+                  </TextArea>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Button maxHeight="20.0" maxWidth="100.0" mnemonicParsing="false" onAction="#showAllCustomers" prefHeight="20.0" prefWidth="100.0" text="Get Customers">
+                           <HBox.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </HBox.margin></Button>
+                        <Button mnemonicParsing="false" onAction="#returnToMain" prefHeight="20.0" prefWidth="60.0" text="Back">
+                           <HBox.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </HBox.margin></Button>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
