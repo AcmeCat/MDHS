@@ -3,7 +3,26 @@ The Maleny Dairy to Home System is a Java SE project that I built as a part of m
 ## Class Diagram UML
 ![Initial View](/caps/ClassDiagramUML.png)
 ## User Interface
-| ![Initial View](/caps/seq1.PNG) | ![Menu View](/caps/seq2.PNG) | ![Search Menu Items](/caps/seq3.PNG) |
+### Customer Process
+| ![Login](/caps/9.PNG) | ![Main Customer Portal](/caps/10.PNG) |
+| --------- | ---------- |
+| Login | Main Customer Portal |
+
+| ![View Delivery Schedule](/caps/11.PNG) | ![Create New Order](/caps/12.PNG) |
+| --------- | ---------- |
+| View Delivery Schedule | Create New Order |
+
+### Admin Process
+| ![Main Admin Portal](/caps/7.PNG) | ![Update Delivery Schedule](/caps/Capture.PNG) |
+| --------- | ---------- |
+| Main Admin Portal | Update Delivery Schedule |
+
+| ![View All Customers](/caps/4.PNG) | ![View All Orders](/caps/13.PNG) |
+| --------- | ---------- |
+| View All Customers | View All Orders |
+
+### Popup Messages
+| ![Login Error Alert](/caps/8.PNG) | ![Update Confirmation](/caps/3.PNG) | ![Update Success Message](/caps/2.PNG) |
 | --------- | ---------- | ---------- |
-| Initial View | Menu View | Search Menu Items |
+| Login Error Alert | Update Confirmation | Update Success Message |
 
